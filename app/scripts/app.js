@@ -19,8 +19,13 @@ angular
     'ngTouch',
     'ngMaterial'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $mdThemingProvider) {
     var views_path = 'views/default';
+
+    $mdThemingProvider.theme('default')
+      .primaryPalette('teal')
+      .accentPalette('grey');
+
     $routeProvider
       .when('/', {
         templateUrl: views_path + '/main.html',
