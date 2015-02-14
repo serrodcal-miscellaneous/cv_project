@@ -33,5 +33,12 @@
   },
   "scripts": {
     "test": "grunt test"
-  }
+  },
+  "description": "",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
 }
