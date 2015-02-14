@@ -16,16 +16,18 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ngMaterial'
   ])
   .config(function ($routeProvider) {
+    var views_path = 'views/default';
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
+        templateUrl: views_path + '/main.html',
         controller: 'MainCtrl'
       })
       .when('/about', {
-        templateUrl: 'views/about.html',
+        templateUrl: views_path + '/about.html',
         controller: 'AboutCtrl'
       })
       .otherwise({
