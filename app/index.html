@@ -17,6 +17,7 @@
     <!-- endbuild -->
   </head>
   <body ng-app="cvProjectApp">
+      <div style="position: fixed; top: 0; left: 0; z-index: 999; width: 100%;">
       <md-toolbar md-scroll-shrink layout="row">
         <div class="md-toolbar-tools">
           <h3>
@@ -24,7 +25,7 @@
           </h3>
         </div>
       </md-toolbar>
-      <md-tabs class="md-default-theme md-hue-2">
+      <md-tabs class="md-default-theme md-hue-2" >
         <md-tab id="tab1" aria-controls="tab1-content" du-smooth-scroll du-scrollspy href="#home">
           <i class="fa fa-user fa-2x"></i>
           Inicio
@@ -46,6 +47,7 @@
           Tecnolog&iacute;as
         </md-tab>
       </md-tabs>
+    </div>
 
     <md-content class="md-padding" class="container" ng-controller="MainCtrl">
       <div ng-include="viewsPath + '/main.html'" layout="column" class="layout-content" du-scroll-container></div>
