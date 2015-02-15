@@ -11,7 +11,7 @@ angular.module('cvProjectApp').provider('ConfigProvider', function () {
 
     // Private constructor
     function Config() {
-      this.viewsPath = 'views/fernando';
+      this.viewsPath = 'views/default';
       this.primaryPaletteColor = 'teal';
       this.accentPaletteColor = 'grey';
       this.app ={
