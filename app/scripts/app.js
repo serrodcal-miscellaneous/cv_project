@@ -21,10 +21,11 @@ angular
   ])
   .config(function ($routeProvider, $mdThemingProvider) {
     var views_path = 'views/default';
+    var primaryPalette_color = 'teal';
+    var accentPalette_color = 'grey';
 
-    $mdThemingProvider.theme('default')
-      .primaryPalette('teal')
-      .accentPalette('grey');
+
+    $mdThemingProvider.theme('default').primaryPalette(primaryPalette_color).accentPalette(accentPalette_color);
 
     $routeProvider
       .when('/', {
