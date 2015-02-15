@@ -1,0 +1,12 @@
+<md-content class="extraPad md-default-theme" style="margin-top: 45%; margin-bottom: 40%;" ng-controller="HomeCtrl">
+
+  <span style="color: #009688; font-size: 200%;" ng-bind="user.name"></span>
+
+  <nav style="margin-top: 25px; border-left: 5px solid; padding-left: 20px; border-left-color: #b2dfdb;">
+    <ul style="list-style:none; margin-top: 0; padding-left: 0;">
+      <li style="font-size: 20px; line-height: 40px;"><i class="fa fa-envelope-o fa-2x md-primary"></i> <a ng-bind="user.email.text" ng-href="{{ user.email.url }}"></a></li>
+      <li style="font-size: 20px; line-height: 40px;"><i class="fa fa-linkedin fa-2x"></i> <a ng-bind="user.linkedin.text" ng-href="{{ user.linkedin.url }}"></a></li>
+      <li style="font-size: 20px; line-height: 40px;"><i class="fa fa-github fa-2x"></i> <a ng-bind="user.github.text" ng-href="{{ user.github.url }}"></a></li>
+    </ul>
+  </nav>
+</md-content>
