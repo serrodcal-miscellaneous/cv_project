@@ -7,7 +7,7 @@
  * # ConfigProvider
  * Provider in the cvProjectApp.
  */
-angular.module('cvProjectApp').provider('ConfigProvider', function () {
+angular.module('cvProjectApp').provider('config', function () {
 
     // Private constructor
     function Config() {

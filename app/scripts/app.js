@@ -20,21 +20,18 @@ angular
     'ngMaterial',
     'duScroll'
   ])
-  .config(function ($routeProvider, $mdThemingProvider) {
-    var views_path = 'views/default';
-    var primaryPalette_color = 'teal';
-    var accentPalette_color = 'grey';
+  .config(function ($routeProvider, $mdThemingProvider, configProvider) {
+    var config = configProvider.$get();
 
-
-    $mdThemingProvider.theme('default').primaryPalette(primaryPalette_color).accentPalette(accentPalette_color);
+    $mdThemingProvider.theme('default').primaryPalette(config.primaryPaletteColor).accentPalette(config.accentPaletteColor);
 
     $routeProvider
       .when('/', {
-        templateUrl: views_path + '/main.html',
+        templateUrl: config.viewsPath + '/main.html',
         controller: 'MainCtrl'
       })
       .when('/about', {
-        templateUrl: views_path + '/about.html',
+        templateUrl: config.viewsPath + '/about.html',
         controller: 'AboutCtrl'
       })
       .otherwise({
