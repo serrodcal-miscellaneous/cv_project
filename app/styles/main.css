@@ -1,4 +1,4 @@
-.layout-content, .doc-content {
-max-width: 864px;
-margin: auto;
+.layout-content{
+    max-width: 864px;
+    margin: auto;
 }

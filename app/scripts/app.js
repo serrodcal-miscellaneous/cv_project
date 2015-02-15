@@ -17,7 +17,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'ngMaterial'
+    'ngMaterial',
+    'duScroll'
   ])
   .config(function ($routeProvider, $mdThemingProvider) {
     var views_path = 'views/default';
