@@ -21,7 +21,7 @@ angular
     'duScroll'
   ])
   .config(function ($routeProvider, $mdThemingProvider) {
-    var views_path = 'views/default';
+    var views_path = 'views/sergio';
     var primaryPalette_color = 'teal';
     var accentPalette_color = 'grey';
 
