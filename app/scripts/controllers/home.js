@@ -2,20 +2,18 @@
 
 /**
  * @ngdoc function
- * @name cvProjectApp.controller:MainCtrl
+ * @name cvProjectApp.controller:HomectrlCtrl
  * @description
- * # MainCtrl
+ * # HomectrlCtrl
  * Controller of the cvProjectApp
  */
 angular.module('cvProjectApp')
-  .controller('MainCtrl', function ($scope, ConfigProvider) {
+  .controller('HomeCtrl', function ($scope, HomeDataProvider) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
 
-    $scope.viewsPath = ConfigProvider.viewsPath;
-    $scope.app = ConfigProvider.app;
-
+    $scope.user = HomeDataProvider.user;
   });

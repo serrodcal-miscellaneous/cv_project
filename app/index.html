@@ -16,12 +16,12 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="cvProjectApp">
+  <body ng-app="cvProjectApp"  ng-controller="MainCtrl">
       <div style="position: fixed; top: 0; left: 0; z-index: 999; width: 100%;">
       <md-toolbar md-scroll-shrink layout="row">
         <div class="md-toolbar-tools">
           <h3>
-            <span Style="font-weight: bold;">Sergio Rodr&iacute;guez </span><span Style="color: #000000; font-size: 14px; text-align: right; width: 80%;">Ingeniero Software</span>
+            <span Style="font-weight: bold;" ng-bind="app.title"></span> <span Style="color: #000000; font-size: 14px; text-align: right; width: 80%;" ng-bind="app.subtitle"></span>
           </h3>
         </div>
       </md-toolbar>
@@ -49,7 +49,7 @@
       </md-tabs>
     </div>
 
-    <md-content class="md-padding" class="container" ng-controller="MainCtrl">
+    <md-content class="md-padding" class="container">
       <div ng-include="viewsPath + '/main.html'" layout="column" class="layout-content" du-scroll-container></div>
     </md-content>
 
@@ -75,6 +75,10 @@
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/services/configprovider.js"></script>
+        <script src="scripts/services/homedataprovider.js"></script>
+        <script src="scripts/controllers/home.js"></script>
+        <script src="scripts/controllers/projects.js"></script>
+        <script src="scripts/services/projectsdataprovider.js"></script>
         <!-- endbuild -->
 </body>
 </html>

@@ -1,0 +1,18 @@
+<md-content class="extraPad md-default-theme" ng-controller="ProjectsCtrl">
+
+    <h2 style="color: #009688;">PROJECTS</h2>
+
+    <md-card layout="row" ng-repeat="project in projects">
+      <img flex="30" ng-src="{{project.image_url}}" class="md-card-image">
+      <md-card-content flex="70 ">
+        <md-card-header layout="row" layout-align="space-between center">
+            <h2 ng-bind="project.title"></h2>
+            <span ng-bind="project.date"></span>
+        </md-card-header>
+        <p ng-bind="project.description"></p>
+        <div layout="row" layout-align="end center">
+            <md-button href="{{project.url}}" class="md-primary">SEE MORE</md-button>
+        </div>
+      </md-card-content>
+    </md-card>
+</md-content>
